@@ -1,27 +1,38 @@
-class Television {
-    String model;
-    boolean on;
-    int channel;
-    int volume;
+package it.units.sdm;
 
-    Television(String model, int channel, int volume) {
+public class Television {
+
+    private final String model;
+
+    private boolean on;
+    private int channel;
+    private int volume;
+
+    public Television(String model, int channel, int volume) {
         this(model);
         this.channel = channel;
         this.volume = volume;
     }
 
-    Television(String model) {
+    public Television(String model) {
         this.model = model;
     }
 
-    void setVolume(int volume) {
+    public void setVolume(int volume) {
         this.volume = volume;
     }
 
-    int increaseVolume() {
+    public int increaseVolume() {
         var newVolume = volume + 1;
         volume = newVolume;
         return volume;
     }
 
+    public void turnOn() {
+        on = true;
+    }
+
+    public void turnOff() {
+        on = false;
+    }
 }
