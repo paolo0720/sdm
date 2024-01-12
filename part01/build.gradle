@@ -22,7 +22,7 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     // This dependency is used by the application.
-    //implementation libs.guava
+    implementation libs.json
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'it.units.sdm.App'
+    mainClass = 'HelloWorld'
 }
 
 tasks.named('test') {
