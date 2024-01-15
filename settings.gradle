@@ -8,3 +8,4 @@
 rootProject.name = 'sdm-2023-24'
 include('part01')
 include('part02')
+include('part03')
