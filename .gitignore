@@ -9,3 +9,7 @@ build
 
 # Ignore Intellij build output directory
 out
+
+# Ignore files created form demonstration
+test.dat
+test.txt
