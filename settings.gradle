@@ -13,3 +13,5 @@ include('part04')
 include('part05')
 include('part06')
 include('part07')
+include('part08')
+
