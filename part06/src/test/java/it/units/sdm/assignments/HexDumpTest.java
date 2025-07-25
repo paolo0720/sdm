@@ -14,7 +14,7 @@ class HexDumpTest {
     @Test
     void testOneGroup() throws IOException {
         HexDump hexDump = new HexDump();
-        InputStream inputStream = new ByteArrayInputStream(new byte[] {0x25, 0x50});
+        InputStream inputStream = new ByteArrayInputStream(new byte[]{0x25, 0x50});
         StringWriter writer = new StringWriter();
 
         hexDump.dump(inputStream, writer);
@@ -25,7 +25,7 @@ class HexDumpTest {
     @Test
     void testTwoGroups() throws IOException {
         HexDump hexDump = new HexDump();
-        InputStream inputStream = new ByteArrayInputStream(new byte[] {0x25, 0x50, 0x44, 0x46});
+        InputStream inputStream = new ByteArrayInputStream(new byte[]{0x25, 0x50, 0x44, 0x46});
         StringWriter writer = new StringWriter();
 
         hexDump.dump(inputStream, writer);
@@ -36,7 +36,7 @@ class HexDumpTest {
     @Test
     void testNonPrintables() throws IOException {
         HexDump hexDump = new HexDump();
-        InputStream inputStream = new ByteArrayInputStream(new byte[] {0x25, 0x50, 0x44, 0x46, 0x2d, 0x31, 0x2e, 0x37, 0x0d, 0x0a, 0x25, (byte) 0xb5, (byte) 0xb5, (byte) 0xb5, (byte) 0xb5, 0x0d});
+        InputStream inputStream = new ByteArrayInputStream(new byte[]{0x25, 0x50, 0x44, 0x46, 0x2d, 0x31, 0x2e, 0x37, 0x0d, 0x0a, 0x25, (byte) 0xb5, (byte) 0xb5, (byte) 0xb5, (byte) 0xb5, 0x0d});
         StringWriter writer = new StringWriter();
 
         hexDump.dump(inputStream, writer);
@@ -47,7 +47,7 @@ class HexDumpTest {
     @Test
     void testMultipleLines() throws IOException {
         HexDump hexDump = new HexDump();
-        InputStream inputStream = new ByteArrayInputStream(new byte[] {
+        InputStream inputStream = new ByteArrayInputStream(new byte[]{
                 0x25, 0x50, 0x44, 0x46, 0x2d, 0x31, 0x2e, 0x37, 0x0d, 0x0a, 0x25, (byte) 0xb5, (byte) 0xb5, (byte) 0xb5, (byte) 0xb5, 0x0d,
                 0x0a, 0x31, 0x20, 0x30, 0x20, 0x6f, 0x62, 0x6a, 0x0d, 0x0a, 0x3c, 0x3c, 0x2f, 0x54, 0x79, 0x70
         });
