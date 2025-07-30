@@ -1,1 +1,1 @@
-# Part 03 - Object-oriented programming
+# Part 03 - Object-oriented programming (OOP)

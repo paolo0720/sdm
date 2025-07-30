@@ -1,1 +1,0 @@
-# Part 08 - Acceptance testing
