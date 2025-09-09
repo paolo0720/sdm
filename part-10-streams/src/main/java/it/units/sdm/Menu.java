@@ -2,11 +2,11 @@ package it.units.sdm;
 
 import it.units.sdm.Dish.Type;
 
-import java.util.List;
+import java.util.Set;
 
 public class Menu {
 
-    static final List<Dish> MENU = List.of(
+    static final Set<Dish> MENU = Set.of(
             new Dish("pork", false, 800, Type.MEAT),
             new Dish("beef", false, 700, Type.MEAT),
             new Dish("chicken", false, 400, Type.MEAT),
@@ -18,7 +18,7 @@ public class Menu {
             new Dish("salmon", false, 450, Type.FISH)
     );
 
-    static final List<Dish> SPECIAL_MENU = List.of(
+    static final Set<Dish> SPECIAL_MENU = Set.of(
             new Dish("seasonal fruit", true, 120, Type.OTHER),
             new Dish("prawns", false, 300, Type.FISH),
             new Dish("rice", true, 350, Type.OTHER),
