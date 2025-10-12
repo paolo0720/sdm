@@ -2,13 +2,13 @@ package it.units.sdm;
 
 public class InstanceOf {
 
-    public static void main(String[] args) {
-        Television tv = new Television("LG120");
-        Television ptv = new PlasmaTelevision("LG121");
+    static void main(String[] args) {
+        Shop s = new Shop("Today's bread");
+        Shop f = new Florist("Flora");
 
-        System.out.println("is tv a Television? " + (tv instanceof Television));
-        System.out.println("is tv a PlasmaTelevision? " + (tv instanceof PlasmaTelevision));
-        System.out.println("is ptv a Television? " + (ptv instanceof Television));
-        System.out.println("is ptv a PlasmaTelevision? " + (ptv instanceof PlasmaTelevision));
+        IO.println("is s a Shop? " + (s instanceof Shop));
+        IO.println("is s a Florist? " + (s instanceof Florist));
+        IO.println("is f a Shop? " + (f instanceof Shop));
+        IO.println("is f a Florist? " + (f instanceof Florist));
     }
 }

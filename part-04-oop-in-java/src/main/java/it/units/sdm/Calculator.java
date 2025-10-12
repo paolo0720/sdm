@@ -15,11 +15,11 @@ public class Calculator {
         this.display = display;
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Display display = new Display() {
             @Override
             public void display(String text) {
-                System.out.println(text);
+                IO.println(text);
             }
         };
 

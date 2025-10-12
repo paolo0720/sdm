@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class ComparatorExample2 {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Comparator<String> comparator = new Comparator<>() {
             @Override
             public int compare(String o1, String o2) {
