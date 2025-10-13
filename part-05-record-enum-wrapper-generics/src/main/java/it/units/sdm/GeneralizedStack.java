@@ -1,4 +1,4 @@
-package it.units.it.units.sdm;
+package it.units.sdm;
 
 import java.util.Arrays;
 
@@ -14,7 +14,7 @@ public class GeneralizedStack {
         stack.push(new Object());
         while (stack.getSize() > 0) {
             String text = (String) stack.pop();
-            System.out.println(text);
+            IO.println(text);
         }
     }
 

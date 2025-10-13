@@ -1,4 +1,4 @@
-package it.units.it.units.sdm;
+package it.units.sdm;
 
 public class StringStack {
 
@@ -12,7 +12,7 @@ public class StringStack {
         //stack.push(new Object());
         while (stack.getSize() > 0) {
             String text = stack.pop();
-            System.out.println(text);
+            IO.println(text);
         }
     }
 

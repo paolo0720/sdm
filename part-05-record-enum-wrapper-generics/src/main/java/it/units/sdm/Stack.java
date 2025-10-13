@@ -1,4 +1,4 @@
-package it.units.it.units.sdm;
+package it.units.sdm;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ public class Stack<T> {
         //stringStack.push(new Object());
         while (stringStack.getSize() > 0) {
             String text = stringStack.pop();
-            System.out.println(text);
+            IO.println(text);
         }
     }
 

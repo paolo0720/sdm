@@ -1,4 +1,4 @@
-package it.units.it.units.sdm.assigments.collections;
+package it.units.sdm.exercises.collections;
 
 public interface Collection {
 

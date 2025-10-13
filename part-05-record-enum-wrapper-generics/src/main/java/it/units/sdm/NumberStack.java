@@ -1,4 +1,4 @@
-package it.units.it.units.sdm;
+package it.units.sdm;
 
 public class NumberStack<N extends Number> extends Stack<N> {
 
