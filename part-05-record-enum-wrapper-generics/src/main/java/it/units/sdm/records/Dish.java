@@ -1,4 +1,4 @@
-package it.units.sdm;
+package it.units.sdm.records;
 
 public record Dish(String name, boolean vegetarian, int calories, Type type) {
 
@@ -8,5 +8,4 @@ public record Dish(String name, boolean vegetarian, int calories, Type type) {
     public String toString() {
         return name;
     }
-
 }

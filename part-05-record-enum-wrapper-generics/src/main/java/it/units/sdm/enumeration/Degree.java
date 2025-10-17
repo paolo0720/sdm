@@ -1,4 +1,4 @@
-package it.units.sdm;
+package it.units.sdm.enumeration;
 
 public enum Degree {
 
