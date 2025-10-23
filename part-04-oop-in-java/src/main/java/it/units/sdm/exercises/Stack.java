@@ -1,4 +1,4 @@
-package it.units.sdm.exercises.collections;
+package it.units.sdm.exercises;
 
 public interface Stack extends Collection {
 
