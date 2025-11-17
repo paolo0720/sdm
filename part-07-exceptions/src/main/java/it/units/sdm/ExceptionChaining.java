@@ -2,10 +2,6 @@ package it.units.sdm;
 
 public class ExceptionChaining {
 
-    public static void main(String[] args) {
-
-    }
-
     public interface Display {
         void display(String text) throws DisplayException;
     }
@@ -24,7 +20,7 @@ public class ExceptionChaining {
 
     public static class DisplayException extends Exception {
 
-        public DisplayException(ArithmeticException ex) {
+        public DisplayException(Exception ex) {
             super(ex);
         }
     }

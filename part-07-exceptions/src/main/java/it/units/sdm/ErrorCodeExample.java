@@ -2,7 +2,7 @@ package it.units.sdm;
 
 public class ErrorCodeExample {
 
-    public static void main(String[] args) {
+    static void main() {
         String text1 = "Ciao!";
         String text2 = "Hello, World!";
 
@@ -27,10 +27,10 @@ public class ErrorCodeExample {
 
         public int display(String text) {
             if (text.length() > SIZE) {
-                System.out.println(text.substring(0, 10));
+                IO.println(text.substring(0, 10));
                 return TEXT_LENGTH_TOO_BIG;
             } else {
-                System.out.println(text);
+                IO.println(text);
                 return OK;
             }
         }
