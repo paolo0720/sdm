@@ -16,7 +16,7 @@ import static java.awt.GridBagConstraints.NONE;
 
 public class GridBagLayoutDemo {
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(GridBagLayoutDemo::run);
     }
 

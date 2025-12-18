@@ -5,7 +5,7 @@ import javax.swing.SwingUtilities;
 
 public class HiddenFrame {
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(HiddenFrame::hideFrame);
     }
 

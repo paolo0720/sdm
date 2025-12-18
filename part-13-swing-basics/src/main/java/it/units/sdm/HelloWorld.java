@@ -10,7 +10,7 @@ import java.awt.BorderLayout;
 
 public class HelloWorld {
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(HelloWorld::helloWorld);
     }
 

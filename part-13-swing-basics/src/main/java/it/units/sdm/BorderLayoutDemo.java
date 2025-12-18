@@ -9,7 +9,7 @@ import java.awt.Container;
 
 public class BorderLayoutDemo {
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(BorderLayoutDemo::run);
     }
 
