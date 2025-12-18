@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 public class IteratorExample {
 
-    public static void main(String[] args) {
+    static void main() {
         var set = Set.of(1, 2, 3, 4, 5);
 
         ArrayList<Integer> l = new ArrayList(set);

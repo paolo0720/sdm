@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class HashcodeExample3 {
 
-    public static void main(String[] args) {
+    static void main() {
         var fileSizes = new HashMap<File, Long>();
         fileSizes.put(new File("C:\\Users\\pvercesi\\Desktop\\lesson8.pdf"), 342340L);
         fileSizes.put(new File("C:\\Users\\pvercesi\\Desktop\\lesson9.pdf"), 512956L);
@@ -21,7 +21,7 @@ public class HashcodeExample3 {
         }
 
         File file = new File("C:\\Users\\pvercesi\\Desktop\\lesson8a.pdf");
-        System.out.println(fileSizes.get(file));
+        IO.println(fileSizes.get(file));
     }
 
 

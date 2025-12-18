@@ -5,11 +5,11 @@ import java.util.TreeSet;
 
 public class ComparableExample {
 
-    public static void main(String[] args) {
+    static void main() {
         Set<String> citiesOfFvg = Set.of("Trieste", "Udine", "Gorizia", "Pordenone");
 
         Set<String> naturalOrder = new TreeSet<>(citiesOfFvg);
 
-        System.out.println(naturalOrder);
+        IO.println(naturalOrder);
     }
 }

@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class Main {
 
-    public static void main(String[] args) {
+    static void main() {
         Set<String> stopWords = Set.of("a", "the", "an", "of", "by", "as", "in", "and", "to", "for", "is", "that", "with", "be", "are", "it", "this", "on", "");
         TermFrequencyBuilder tfBuilder = new TermFrequencyBuilder();
         tfBuilder.setTokenizer(new Tokenizer() {

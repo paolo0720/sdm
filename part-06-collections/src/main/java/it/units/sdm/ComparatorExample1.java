@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class ComparatorExample1 {
 
-    public static void main(String[] args) {
+    static void main() {
         Set<String> citiesOfFvg = Set.of("Trieste", "Udine", "Gorizia", "Pordenone");
 
         Set<String> lengthOrder = new TreeSet<>(new Comparator<String>() {
@@ -17,6 +17,6 @@ public class ComparatorExample1 {
         });
         lengthOrder.addAll(citiesOfFvg);
 
-        System.out.println(lengthOrder);
+        IO.println(lengthOrder);
     }
 }
