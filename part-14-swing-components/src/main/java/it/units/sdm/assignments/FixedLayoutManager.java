@@ -78,7 +78,7 @@ public class FixedLayoutManager implements LayoutManager2 {
         }
     }
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Fixed layout");
             frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);

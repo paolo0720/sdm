@@ -46,7 +46,7 @@ public class EventDemo extends JComponent {
         }
     }
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Event Demo");
             frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);

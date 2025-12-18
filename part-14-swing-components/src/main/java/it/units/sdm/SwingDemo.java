@@ -26,7 +26,7 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 public class SwingDemo {
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(SwingDemo::buildAndShow);
     }
 

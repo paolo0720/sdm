@@ -125,7 +125,7 @@ public class SwingDisplay implements Display {
         textField.setText(text);
     }
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(() -> {
             SwingDisplay swingDisplay = new SwingDisplay();
             swingDisplay.setCalculator(new Calculator(swingDisplay));

@@ -8,7 +8,7 @@ import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class JOptionPaneDemo {
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(JOptionPaneDemo::demo);
     }
 

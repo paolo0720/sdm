@@ -2,12 +2,12 @@ package it.units.sdm;
 
 public class ThreadJoinExample {
 
-    public static void main(String[] args) throws Exception {
+    static void main() throws Exception {
         var thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < 5; i++) {
-                    System.out.println("Running");
+                    IO.println("Running");
                     try {
                         Thread.sleep(1000);
                     } catch (Exception ex) {
@@ -17,9 +17,9 @@ public class ThreadJoinExample {
             }
         });
         thread.start();
-        System.out.println("Start waiting for the thread to finish");
+        IO.println("Start waiting for the thread to finish");
         thread.join();
-        System.out.println("End of main");
+        IO.println("End of main");
     }
 
 }

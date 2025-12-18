@@ -66,7 +66,7 @@ public class AnimationDemo extends JComponent {
         repaint();
     }
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Animation demo");
             AnimationDemo animationDemo = new AnimationDemo();

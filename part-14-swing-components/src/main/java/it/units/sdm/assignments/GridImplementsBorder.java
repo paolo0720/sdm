@@ -16,7 +16,7 @@ import static java.awt.GridBagConstraints.VERTICAL;
 
 public class GridImplementsBorder {
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(GridImplementsBorder::run);
     }
 

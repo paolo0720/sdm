@@ -32,7 +32,7 @@ public class PaintDemo extends JComponent {
         }
     }
 
-    public static void main(String[] args) {
+    static void main() {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame();
             frame.getContentPane().add(new PaintDemo());
