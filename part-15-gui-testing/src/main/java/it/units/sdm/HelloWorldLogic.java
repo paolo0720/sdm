@@ -16,7 +16,7 @@ public class HelloWorldLogic {
         view.closeWindow();
     }
 
-    public static void main(String[] args) {
+    static void main() {
         SwingHelloWorld view = new SwingHelloWorld();
         HelloWorldLogic logic = new HelloWorldLogic(view);
         view.installLogic(logic);
