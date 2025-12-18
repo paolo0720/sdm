@@ -8,7 +8,7 @@ public class Stack<T> {
     private Class<T> type;
     protected T[] data = (T[]) Array.newInstance(type, 0);
 
-    public static void main(String[] args) {
+    static void main() {
         Stack<String> stringStack = new Stack<>();
         stringStack.push("Hello,");
         stringStack.push("World!");

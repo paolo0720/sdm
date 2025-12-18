@@ -6,7 +6,7 @@ public class GeneralizedStack {
 
     private Object[] data = new Object[0];
 
-    public static void main(String[] args) {
+    static void main() {
         GeneralizedStack stack = new GeneralizedStack();
 
         stack.push("Hello,");

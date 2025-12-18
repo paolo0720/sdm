@@ -4,7 +4,7 @@ public class StringStack {
 
     private final GeneralizedStack data = new GeneralizedStack();
 
-    public static void main(String[] args) {
+    static void main() {
         StringStack stack = new StringStack();
         stack.push("Hello,");
         stack.push("World!");
