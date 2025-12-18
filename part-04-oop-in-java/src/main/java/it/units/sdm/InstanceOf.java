@@ -2,7 +2,7 @@ package it.units.sdm;
 
 public class InstanceOf {
 
-    static void main(String[] args) {
+    static void main() {
         Shop s = new Shop("Today's bread");
         Shop f = new Florist("Flora");
 

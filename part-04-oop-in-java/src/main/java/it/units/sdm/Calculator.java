@@ -15,7 +15,7 @@ public class Calculator {
         this.display = display;
     }
 
-    static void main(String[] args) {
+    static void main() {
         Display display = new Display() {
             @Override
             public void display(String text) {
