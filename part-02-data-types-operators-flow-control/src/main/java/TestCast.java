@@ -4,8 +4,8 @@ void main() {
     float c = 1002;      // 1002 is an int
     double d = 3.45F;    // 3.45F is a float
 
-    int f = (int) b;     // e is a long
-    float h = (float) d; // g is a double
+    int f = (int) b;     // b is a long
+    float h = (float) d; // d is a double
     byte g = (byte) c;   // c is a float
 
     IO.println(f);
