@@ -6,12 +6,12 @@ import java.io.InputStream;
 
 public class InputStreamExample3 {
 
-    public static void main(String[] args) throws IOException {
+    static void main() throws IOException {
         byte[] byteArray = new byte[]{'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!'};
         try (InputStream is = new ByteArrayInputStream(byteArray)) {
             int read;
             while ((read = is.read()) != -1) {
-                System.out.print(read);
+                IO.print((char) read);
             }
         }
     }

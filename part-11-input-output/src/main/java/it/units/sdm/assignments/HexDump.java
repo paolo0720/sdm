@@ -9,7 +9,7 @@ import java.util.HexFormat;
 
 public class HexDump {
 
-    public static void main(String[] args) throws IOException {
+    static void main(String[] args) throws IOException {
         HexDump hexDump = new HexDump();
         try (FileInputStream inputStream = new FileInputStream(args[0])) {
             hexDump.dump(inputStream, new PrintWriter(System.out, true));

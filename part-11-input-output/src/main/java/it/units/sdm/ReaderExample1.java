@@ -10,19 +10,19 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class ReaderExample1 {
 
-    public static void main(String[] args) throws IOException {
+    static void main() throws IOException {
         String fileName = "README.md";
         try (Reader reader = new InputStreamReader(new FileInputStream(fileName), UTF_8)) {
             int ch = -1;
             while ((ch = reader.read()) != -1) {
-                System.out.print((char) ch);
+                IO.print((char) ch);
             }
         }
 
         try (Reader reader = new FileReader(fileName, UTF_8)) {
             int ch = -1;
             while ((ch = reader.read()) != -1) {
-                System.out.print((char) ch);
+                IO.print((char) ch);
             }
         }
     }
