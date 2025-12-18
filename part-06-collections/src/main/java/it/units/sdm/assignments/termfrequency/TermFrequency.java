@@ -14,7 +14,7 @@ public class TermFrequency {
 
     private void print(Map<String, Integer> map) {
         for (var entry : map.entrySet()) {
-            System.out.println(entry);
+            IO.println(entry);
         }
     }
 
