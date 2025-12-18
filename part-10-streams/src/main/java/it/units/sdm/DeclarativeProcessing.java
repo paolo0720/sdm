@@ -7,7 +7,7 @@ import static it.units.sdm.Menu.MENU;
 
 public class DeclarativeProcessing {
 
-    public static void main(String[] args) {
+    static void main() {
 
         List<String> lowCaloricDishesName = MENU.stream()
                 .filter(d -> d.calories() < 400)
@@ -15,6 +15,6 @@ public class DeclarativeProcessing {
                 .map(Dish::name)
                 .toList();
 
-        System.out.println(lowCaloricDishesName);
+        IO.println(lowCaloricDishesName);
     }
 }

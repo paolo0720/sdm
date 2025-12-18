@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 
 public class GroupingExample {
 
-    public static void main(String[] args) {
+    static void main() {
         Map<Dish.Type, List<Dish>> dishesByType = Menu.MENU.stream()
                 .collect(Collectors.groupingBy(Dish::type));
 
-        System.out.println(dishesByType);
+        IO.println(dishesByType);
     }
 }

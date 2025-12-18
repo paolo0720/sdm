@@ -6,26 +6,26 @@ import static it.units.sdm.Menu.MENU;
 
 public class MapExample {
 
-    public static void main(String[] args) {
+    static void main() {
         List<String> dishNames = MENU.stream()
                 .map(Dish::name)
                 .toList();
 
-        System.out.println("Dish names: " + dishNames);
+        IO.println("Dish names: " + dishNames);
 
         List<String> upperCaseDishNames = MENU.stream()
                 .map(Dish::name)
                 .map(String::toUpperCase)
                 .toList();
 
-        System.out.println("Uppercase dish names: " + upperCaseDishNames);
+        IO.println("Uppercase dish names: " + upperCaseDishNames);
 
         List<Integer> dishNameLengths = MENU.stream()
                 .map(Dish::name)
                 .map(String::length)
                 .toList();
 
-        System.out.println("Dish name lengths: " + dishNameLengths);
+        IO.println("Dish name lengths: " + dishNameLengths);
 
     }
 }

@@ -4,11 +4,11 @@ import static it.units.sdm.Menu.MENU;
 
 public class ReductionExample2 {
 
-    public static void main(String[] args) {
+    static void main() {
         Integer sumOfCalories = MENU.stream()
                 .map(Dish::calories)
                 .reduce(0, Integer::sum);
 
-        System.out.println("Sum of the calories in the menu: " + sumOfCalories);
+        IO.println("Sum of the calories in the menu: " + sumOfCalories);
     }
 }

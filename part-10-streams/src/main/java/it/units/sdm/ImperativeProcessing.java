@@ -8,7 +8,7 @@ import static it.units.sdm.Menu.MENU;
 
 public class ImperativeProcessing {
 
-    public static void main(String[] args) {
+    static void main() {
         List<Dish> lowCaloricDishes = new ArrayList<>();
         for (Dish dish : MENU) {
             if (dish.calories() < 400) {
@@ -22,6 +22,6 @@ public class ImperativeProcessing {
             lowCaloricDishesName.add(dish.name());
         }
 
-        System.out.println(lowCaloricDishesName);
+        IO.println(lowCaloricDishesName);
     }
 }

@@ -6,14 +6,14 @@ import java.util.stream.Stream;
 
 public class FlatMapExample {
 
-    public static void main(String[] args) {
+    static void main() {
         Stream.of(Stream.of(1, 2), Stream.of(3, 4))
                 .flatMap(x -> x)
-                .forEachOrdered(System.out::println);
+                .forEachOrdered(IO::println);
 
         Stream.of(List.of(1, 2), List.of(3, 4))
                 .flatMap(x -> x.stream())
-                .forEachOrdered(System.out::println);
+                .forEachOrdered(IO::println);
 
         List<String> strings = List.of("Java", "is", "great!");
         List<String> distinct = strings.stream()
@@ -21,6 +21,6 @@ public class FlatMapExample {
                 .flatMap(Arrays::stream)
                 .distinct()
                 .toList();
-        System.out.println(distinct);
+        IO.println(distinct);
     }
 }

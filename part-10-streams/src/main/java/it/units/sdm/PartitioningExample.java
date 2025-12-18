@@ -8,10 +8,10 @@ import static it.units.sdm.Menu.MENU;
 
 public class PartitioningExample {
 
-    public static void main(String[] args) {
+    static void main() {
         Map<Boolean, List<Dish>> partitionedMenu = MENU.stream()
                 .collect(Collectors.partitioningBy(Dish::vegetarian));
 
-        System.out.println(partitionedMenu);
+        IO.println(partitionedMenu);
     }
 }

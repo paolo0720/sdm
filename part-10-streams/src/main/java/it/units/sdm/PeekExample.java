@@ -5,11 +5,11 @@ import java.util.stream.Stream;
 
 public class PeekExample {
 
-    public static void main(String[] args) {
+    static void main() {
         Optional<Integer> value = Stream.of(1, 2, 3, 4)
-                .peek(x -> System.out.println("processing: " + x))
+                .peek(x -> IO.println("processing: " + x))
                 .filter(n -> n % 2 == 0)
-                .peek(y -> System.out.println("accepted " + y))
+                .peek(y -> IO.println("accepted " + y))
                 .findFirst();
 
     }

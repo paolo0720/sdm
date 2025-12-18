@@ -4,11 +4,11 @@ import java.util.List;
 
 public class FilterExample {
 
-    public static void main(String[] args) {
+    static void main() {
         List<Dish> vegetarianMenu = Menu.MENU.stream()
                 .filter(Dish::vegetarian)
                 .toList();
 
-        System.out.println(vegetarianMenu);
+        IO.println(vegetarianMenu);
     }
 }

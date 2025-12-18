@@ -10,30 +10,30 @@ import static it.units.sdm.Menu.MENU;
 
 public class CollectorsExample {
 
-    public static void main(String[] args) {
+    static void main() {
         List<String> dishNames1 = MENU.stream()
                 .map(Dish::name)
                 .collect(Collectors.toList());
-        System.out.println(dishNames1);
+        IO.println(dishNames1);
 
         List<String> dishNames2 = MENU.stream()
                 .map(Dish::name)
                 .collect(Collectors.toUnmodifiableList());
-        System.out.println(dishNames2);
+        IO.println(dishNames2);
 
         Map<String, Dish> nameDishMap = MENU.stream()
                 .collect(Collectors.toMap(Dish::name, Function.identity()));
-        System.out.println(nameDishMap);
+        IO.println(nameDishMap);
 
         List<String> dishNames3 = MENU.stream()
                 .map(Dish::name)
                 .toList();
-        System.out.println(dishNames3);
+        IO.println(dishNames3);
 
         String[] dishNames4 = MENU.stream()
                 .map(Dish::name)
                 .toArray(i -> new String[i]);
-        System.out.println(Arrays.toString(dishNames4));
+        IO.println(Arrays.toString(dishNames4));
 
 
     }

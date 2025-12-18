@@ -7,7 +7,7 @@ import static it.units.sdm.Menu.MENU;
 
 public class JoiningStringExample {
 
-    public static void main(String[] args) {
+    static void main() {
         String result = MENU.stream()
                 .map(Dish::name)
                 .map(name -> name.split(""))
@@ -15,6 +15,6 @@ public class JoiningStringExample {
                 .distinct()
                 .collect(Collectors.joining(", "));
 
-        System.out.println(result);
+        IO.println(result);
     }
 }

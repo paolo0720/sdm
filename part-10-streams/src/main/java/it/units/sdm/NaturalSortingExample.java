@@ -4,10 +4,10 @@ import java.util.List;
 
 public class NaturalSortingExample {
 
-    public static void main(String[] args) {
+    static void main() {
         List<String> cities = List.of("Trieste", "Gorizia", "Udine", "Pordenone");
         cities.stream()
                 .sorted()
-                .forEach(System.out::println);
+                .forEach(IO::println);
     }
 }
