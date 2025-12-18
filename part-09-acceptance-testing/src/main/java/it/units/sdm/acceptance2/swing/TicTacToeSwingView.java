@@ -69,7 +69,7 @@ public class TicTacToeSwingView implements TicTacToeView {
         grid.setGame(game);
     }
 
-    public static void main(String[] args) {
+    static void main() {
         TicTacToeSwingView view = new TicTacToeSwingView();
         TicTacToeGame game = new TicTacToeGame(view);
         view.setTicTacToeGame(game);
