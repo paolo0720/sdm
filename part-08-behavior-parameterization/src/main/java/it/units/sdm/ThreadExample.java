@@ -2,12 +2,12 @@ package it.units.sdm;
 
 public class ThreadExample {
 
-    public static void main(String[] args) {
+    static void main() {
         var thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 while (true) {
-                    System.out.println("Running");
+                    IO.println("Running");
                     try {
                         Thread.sleep(1000);
                     } catch (Exception ex) {
@@ -18,6 +18,6 @@ public class ThreadExample {
         });
 
         thread.start();
-        System.out.println("End of main");
+        IO.println("End of main");
     }
 }

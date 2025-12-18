@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 public class LoggerExample {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Logger logger = Logger.getAnonymousLogger();
 
         logger.log(Level.INFO, Arrays.toString(args));

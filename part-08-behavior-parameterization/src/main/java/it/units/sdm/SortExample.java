@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SortExample {
 
-    public static void main(String[] args) {
+    static void main() {
         List<String> list = new ArrayList<>();
         list.add("Trieste");
         list.add("Muggia");
@@ -22,7 +22,7 @@ public class SortExample {
             }
         });
 
-        System.out.println(list);
+        IO.println(list);
     }
 
 }

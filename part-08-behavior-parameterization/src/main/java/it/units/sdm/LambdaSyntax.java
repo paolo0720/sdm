@@ -14,13 +14,13 @@ public class LambdaSyntax {
         String add(String a, String b);
     }
 
-    public static void main(String[] args) {
+    static void main() {
         IntegerAdder integerAdder = (x, y) -> x + y;
         DoubleAdder doubleAdder = (x, y) -> x + y;
         StringAdder stringAdder = (x, y) -> x + y;
 
-        System.out.println(integerAdder.add(2, 3));
-        System.out.println(doubleAdder.add(3.14, 3.0));
-        System.out.println(stringAdder.add("Hello, ", "World!"));
+        IO.println(integerAdder.add(2, 3));
+        IO.println(doubleAdder.add(3.14, 3.0));
+        IO.println(stringAdder.add("Hello, ", "World!"));
     }
 }

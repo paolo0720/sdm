@@ -13,17 +13,17 @@ public class ConstructorReferenceAmbiguityExample {
         List get(int capacity);
     }
 
-    public static void main(String[] args) {
+    static void main() {
         ListSupplier s1 = () -> new ArrayList();
         ListSupplier s2 = ArrayList::new;
 
-        System.out.println(s1.get());
-        System.out.println(s2.get());
+        IO.println(s1.get());
+        IO.println(s2.get());
 
         ListSupplier2 s3 = c -> new ArrayList(c);
         ListSupplier2 s4 = ArrayList::new;
 
-        System.out.println(s3.get(25));
-        System.out.println(s4.get(25));
+        IO.println(s3.get(25));
+        IO.println(s4.get(25));
     }
 }

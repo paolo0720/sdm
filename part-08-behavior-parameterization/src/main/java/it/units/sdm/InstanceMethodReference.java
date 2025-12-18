@@ -4,13 +4,13 @@ import java.util.Random;
 
 public class InstanceMethodReference {
 
-    public static void main(String[] args) {
+    static void main() {
         Random random = new Random();
         RandomGenerator g1 = s -> random.nextInt(s);
         RandomGenerator g2 = random::nextInt;
 
-        System.out.println(g1.get(10));
-        System.out.println(g2.get(10));
+        IO.println(g1.get(10));
+        IO.println(g2.get(10));
     }
 
     interface RandomGenerator {
