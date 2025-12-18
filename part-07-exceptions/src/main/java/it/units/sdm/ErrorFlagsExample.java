@@ -2,19 +2,19 @@ package it.units.sdm;
 
 public class ErrorFlagsExample {
 
-    public static void main(String[] args) {
+    static void main() {
         String text1 = "Ciao!";
         String text2 = "Hello, World!";
 
         FixedSizeDisplay display = new FixedSizeDisplay();
         display.display(text1);
         if (display.checkError()) {
-            System.err.println("An error happened displaying the text");
+            IO.println("An error happened displaying the text");
         }
 
         display.display(text2);
         if (display.checkError()) {
-            System.err.println("An error happened displaying the text");
+            IO.println("An error happened displaying the text");
         }
     }
 
@@ -26,10 +26,10 @@ public class ErrorFlagsExample {
 
         public void display(String text) {
             if (text.length() > SIZE) {
-                System.out.println(text.substring(0, 10));
+                IO.println(text.substring(0, 10));
                 error = true;
             } else {
-                System.out.println(text);
+                IO.println(text);
                 error = false;
             }
         }

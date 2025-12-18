@@ -2,7 +2,7 @@ package it.units.sdm;
 
 public class ThrowExceptionExample {
 
-    public static void main(String[] args) throws Exception {
+    static void main() throws Exception {
         String text1 = "Ciao!";
         String text2 = "Hello, World!";
 
@@ -17,10 +17,10 @@ public class ThrowExceptionExample {
 
         public void display(String text) throws Exception {
             if (text.length() > SIZE) {
-                System.out.println(text.substring(0, 10));
+                IO.println(text.substring(0, 10));
                 throw new Exception("Text length: " + text.length() + " exceeds display size");
             }
-            System.out.println(text);
+            IO.println(text);
         }
     }
 

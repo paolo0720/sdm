@@ -2,7 +2,7 @@ package it.units.sdm;
 
 public class TryCatchFinally {
 
-    public static void main(String[] args) throws TimeoutException {
+    static void main(String[] args) throws TimeoutException {
         var storage = new Storage();
         try {
             for (String arg : args) {
