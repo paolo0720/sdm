@@ -4,7 +4,7 @@ public class DegreeMain {
 
     static void main() {
         for (Degree d : Degree.values()) {
-            IO.println(d.getTitle());
+            IO.println(d + " " + d.getDuration());
         }
 
     }
