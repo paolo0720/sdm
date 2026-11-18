@@ -1,4 +1,4 @@
-# Part 15 – GUI Testing
+# Part 7 – MVC and Humble Object
 
 This lecture focuses on the challenges and best practices for testing Graphical User Interfaces (GUIs). It introduces architectural patterns that facilitate testability and demonstrates how to unit test the logic of a GUI application using test doubles.
 

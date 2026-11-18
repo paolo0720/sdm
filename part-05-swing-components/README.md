@@ -1,4 +1,4 @@
-# Part 14 – Working with Swing components
+# Part 5 – Working with Swing components
 
 This lecture delves deeper into the Swing library, focusing on the wide array of available components and the critical relationship between GUI programming and **multithreading**. It also covers how to create custom components and handle animations.
 

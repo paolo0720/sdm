@@ -1,4 +1,4 @@
-# Part 10 – Streams
+# Part 3 – Streams
 
 This lecture introduces the **Java Stream API**, a powerful tool for processing sequences of elements in a declarative and functional style. The transition from imperative to declarative programming is explored, highlighting the benefits of code readability, maintainability, and parallelization.
 

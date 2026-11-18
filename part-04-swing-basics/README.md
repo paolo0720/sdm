@@ -1,4 +1,4 @@
-# Part 13 – Basics of Swing
+# Part 4 – Basics of Swing
 
 This lecture introduces **Swing**, the standard Java library for creating Graphical User Interfaces (GUIs). It covers the fundamental principles of GUI programming, the structure of Swing applications, and the importance of layout management.
 

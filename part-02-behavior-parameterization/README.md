@@ -1,4 +1,4 @@
-# Part 08 – Behavior parameterization
+# Part 2 – Behavior parameterization
 
 This lecture introduces **behavior parameterization**, a powerful software development pattern that allows a method to receive different behaviors as parameters. This concept is the foundation for modern Java features like lambda expressions and the Streams API.
 

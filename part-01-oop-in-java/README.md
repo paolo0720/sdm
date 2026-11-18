@@ -1,4 +1,4 @@
-# Part 04 – OOP in Java
+# Part 1 – OOP in Java
 
 This lecture translates Object-Oriented Programming (OOP) theory into practical Java implementation. It covers how to define classes, manage object lifecycles, organize code into packages, and use advanced features like inheritance and interfaces.
 
